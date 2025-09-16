@@ -44,9 +44,9 @@ android {
 dependencies {
     implementation(project(":feature:testflow"))
 
-    implementation(platform("androidx.wear.compose:compose-bom:1.3.0"))
-    implementation("androidx.wear.compose:compose-material")
-    implementation("androidx.wear.compose:compose-foundation")
+    // Explicit versions to avoid CI BOM resolution issues
+    implementation("androidx.wear.compose:compose-material:1.3.0")
+    implementation("androidx.wear.compose:compose-foundation:1.3.0")
     implementation("androidx.activity:activity-compose:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.3")
     implementation("androidx.core:core-ktx:1.13.1")
