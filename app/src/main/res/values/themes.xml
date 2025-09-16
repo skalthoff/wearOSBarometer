@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.GasketCheck" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+</resources>
+
