@@ -25,10 +25,7 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
         with:
-          packages: |
-            platforms;android-34
-            build-tools;34.0.0
-            platform-tools
+          packages: platform-tools, platforms;android-34, build-tools;34.0.0
 
       - name: Verify Gradle
         run: gradle --version
@@ -41,4 +38,3 @@ jobs:
         with:
           name: gasket-check-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
-
